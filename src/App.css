@@ -90,6 +90,8 @@ nav {
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-left: 0;
+  padding-left: 0;
 }
 
 .phone-container{
@@ -101,6 +103,7 @@ nav {
   border-radius: 5px;
   padding-bottom: 12px;
   flex-direction: column;
+  width: 250px;
 }
 
 .phoneimage{
