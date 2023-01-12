@@ -36,7 +36,7 @@ After you're finished please remove all the comments and instructions!
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Cryptoverse\] ](#-cryptoverse-)
+- [📖 \[Phone details Master\] ](#-phone-details-master-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -56,7 +56,7 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Cryptoverse] <a name="about-project"></a>
+# 📖 [Phone details Master] <a name="about-project"></a>
 
 > This is a simple React/Redux application that displays a list of phone brands and their phones. The data is fetched from the [Phone Specification API](https://phone-specs-api.azharimm.dev/). The project is part of the Microverse curriculum.
 
