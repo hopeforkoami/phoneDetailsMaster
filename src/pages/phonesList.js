@@ -8,13 +8,11 @@ import Phone from '../components/Phone';
 const PhonesList = () => {
   const params = useParams();
   const { id } = params;
-  console.log(`voici le brqnsd id ${id}`);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getPhonesAction(id));
   }, [dispatch]);
   const phonesListData = useSelector((state) => state.phones);
-  console.log(phonesListData);
   return (<div>
 
     <Header previewLink = "/" />

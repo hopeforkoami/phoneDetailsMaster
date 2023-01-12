@@ -5,7 +5,6 @@ const DETAILS_GETTED = 'DETAILS_GETTED';
 const initialState = [];
 
 export const getPhonesAction = (id) => async (dispatch) => {
-  console.log(`console 3 ${id}`);
   const allPhones = await api.getBrandPhones(id);
   dispatch({
     type: PHONES_GETTED,

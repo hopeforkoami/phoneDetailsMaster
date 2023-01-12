@@ -40,7 +40,6 @@ const api = {
         brandQuery: phone.slug,
       });
     });
-    console.log(phones);
     return phones;
   },
   getPhoneDetails: async (slug) => {
