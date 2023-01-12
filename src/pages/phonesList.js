@@ -14,10 +14,11 @@ const PhonesList = () => {
     dispatch(getPhonesAction(id));
   }, [dispatch]);
   const phonesListData = useSelector((state) => state.phones);
+  console.log(phonesListData);
   return (<div>
 
     <Header previewLink = "/" />
-    <ul className="countries-container">
+    <ul className="phones-container">
         {
           phonesListData.map((phoneData) => (
           <Phone

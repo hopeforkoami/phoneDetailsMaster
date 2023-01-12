@@ -11,7 +11,6 @@ function App() {
         <Route path="/phones/:id" element={<PhonesList />} />
         <Route path='/details' element={<div>phones details pages</div>} />
       </Routes>
-      <div>test de contenu</div>
     </div>
   );
 }

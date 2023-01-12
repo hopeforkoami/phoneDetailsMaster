@@ -26,13 +26,21 @@ const api = {
   getBrandPhones: async (brandId) => {
     const response = await fetch(`${baseURL}brands/${brandId}`);
     const rep = await response.json();
-    const phones = Object.entries(rep.data.phones).map(([key, phone]) => ({
-      id: phone.brand,
-      name: phone.phone_name,
-      image: phone.image,
-      brandQuery: phone.slug,
-      keye: key,
-    }));
+    const phones = Object.entries(rep.data.phones).map(([key, phone]) => {
+      if (key !== undefined) {
+        return ({
+          name: phone.phone_name,
+          image: phone.image,
+          brandQuery: phone.slug,
+        });
+      }
+      return ({
+        name: phone.phone_name,
+        image: phone.image,
+        brandQuery: phone.slug,
+      });
+    });
+    console.log(phones);
     return phones;
   },
   getPhoneDetails: async (slug) => {

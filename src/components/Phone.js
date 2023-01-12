@@ -4,13 +4,12 @@ import ShowIcon from '../assets/ShowIcon.png';
 
 const Phone = (props) => {
   const {
-    id, name, image, brandQuery,
+    name, image, brandQuery,
   } = props;
   return (
-    <li className="country-container">
-    <img src={image} alt="Country" />
-    <h2 className="country-text">{name}</h2>
-    <p className="text-views">{id}</p>
+    <li className="phone-container">
+    <img src={image} alt="Phone image" className='phoneimage' />
+    <h2 className="phone-name">{name}</h2>
     <Link to={`/details/${brandQuery}`}>
       <button type="button" className="show-icon">
         <img src={ShowIcon} alt="Show Icon" />
@@ -23,8 +22,7 @@ const Phone = (props) => {
 export default Phone;
 
 Phone.propTypes = {
-  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  image: PropTypes.number.isRequired,
+  image: PropTypes.string,
   brandQuery: PropTypes.string,
 };

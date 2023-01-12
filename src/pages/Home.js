@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PhoneBrand from '../components/PhoneBrand';
-import { getBrandsAction } from '../reducer/phones/phones';
+import { getBrandsAction } from '../reducer/brands/brands';
 import Header from '../components/Header';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
   useEffect(() => {
     dispatch(getBrandsAction());
   }, [dispatch]);
-  const brandsData = useSelector((state) => state.phones);
+  const brandsData = useSelector((state) => state.brands);
   return (<div>
 
     <Header previewLink = "/" />
