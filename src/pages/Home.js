@@ -13,6 +13,12 @@ const Home = () => {
   return (<div>
 
     <Header previewLink = "/" />
+    <div className='researchbar'>
+      <input type='test' className='searchinput'/>
+      <button className='searchsubmit' type='button'>
+        Search
+      </button>
+    </div>
     <ul className="brands-container">
         {
           brandsData.map((brandData) => (

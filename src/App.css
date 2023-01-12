@@ -39,6 +39,7 @@ nav {
   background-color: #35548b;
   box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
   border-radius: 5px;
+  padding-bottom: 12px;
 }
 
 .brand-container:nth-child(even) {
@@ -48,20 +49,59 @@ nav {
 .brand-name {
   width: 190px;
   height: 120px;
+  font-size: x-large;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .total-phones{
-
+  font-weight: bolder;
 }
 
-.show-icon {
+.researchbar {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  height: 30px;
+}
 
+.searchinput {
+  border-radius: 15px;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.searchsubmit{
+  background-color: #35548b;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 @media only screen and (max-width: 600px) {
   .brands-container {
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    margin: 15px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-left: 0;
   }
-}
+  .brand-name {
+      width: 150px;
+      height: 100px;
+      font-size: x-large;
+      font-weight: bolder;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    
+  }
+ }
+
 
