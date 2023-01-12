@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import PhoneBrand from '../components/PhoneBrand';
-import { getBrandsAction } from '../reducer/brands/brands';
+import { getBrandsAction, filtreBrandsAction } from '../reducer/brands/brands';
 import Header from '../components/Header';
 
 const Home = () => {
@@ -10,12 +10,20 @@ const Home = () => {
     dispatch(getBrandsAction());
   }, [dispatch]);
   const brandsData = useSelector((state) => state.brands);
+  const handlesearch = (param) => {
+    console.log(param);
+    dispatch(filtreBrandsAction(param));
+  };
+
   return (<div>
 
     <Header previewLink = "/" />
     <div className='researchbar'>
-      <input type='test' className='searchinput'/>
-      <button className='searchsubmit' type='button'>
+      <input type='text'
+      className='searchinput'
+      onChange={(e) => handlesearch(e.target.value)}
+      />
+      <button className='searchsubmit' type='button' onClick={handlesearch}>
         Search
       </button>
     </div>
