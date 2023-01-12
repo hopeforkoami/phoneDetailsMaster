@@ -169,7 +169,7 @@ To run tests, run the following command:
 
 - GitHub: [@hopeforkoami](https://github.com/hopeforkoami)
 - Twitter: [@KNogbedji](https://twitter.com/KNogbedji)
-- LinkedIn: [koami-nogbedji-a155b7233](https://linkedin.com/in/
+- LinkedIn: [koami-nogbedji-a155b7233](https://www.linkedin.com/in/koami-nogbedji-a155b7233/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
