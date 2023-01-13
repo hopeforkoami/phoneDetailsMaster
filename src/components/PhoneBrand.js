@@ -8,10 +8,10 @@ const PhoneBrand = (props) => {
   } = props;
   return (
   <li className="brand-container" key={id}>
+    <button type="button" className="show-icon"><Link to={`phones/${brandQuery}`}><img src={ShowIcon} alt="Show icon" /></Link></button>
     <div className="brand-name">{brand}</div>
     <p className="total-phones">{total}</p>
-    <button type="button" className="show-icon"><Link to={`phones/${brandQuery}`}><img src={ShowIcon} alt="Show icon" /></Link></button>
-  </li>
+   </li>
   );
 };
 

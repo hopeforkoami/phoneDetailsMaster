@@ -31,13 +31,13 @@ const api = {
         return ({
           name: phone.phone_name,
           image: phone.image,
-          brandQuery: phone.slug,
+          brandQuery: phone.brand,
         });
       }
       return ({
         name: phone.phone_name,
         image: phone.image,
-        brandQuery: phone.slug,
+        brandQuery: phone.brand,
       });
     });
     return phones;

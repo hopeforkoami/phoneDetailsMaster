@@ -47,7 +47,7 @@ After you're finished please remove all the comments and instructions!
     - [Install](#install)
     - [Usage](#usage)
     - [Run tests](#run-tests)
-  - [👥 Authors ](#-authors-)
+  - [👥 Author ](#-author-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
@@ -101,7 +101,7 @@ After you're finished please remove all the comments and instructions!
 
 > Add a link to your deployed project.
 - [Live Demo Link](http://pdm.nogdevhouse.com/)
-- [Demo video](https://drive.google.com/file/d/1adBIgTWWxY36oFl3XamZKJhadqNJ3bnR/view?usp=sharing)
+- [Demo video](https://pdm.nogdevhouse.com/capstonevideo.mp4)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -161,9 +161,7 @@ To run tests, run the following command:
 
 <!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
-
-> Mention all of the collaborators of this project.
+## 👥 Author <a name="authors"></a>
 
 
 👤 **Koami NOGBEDJI**

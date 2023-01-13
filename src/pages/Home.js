@@ -18,15 +18,23 @@ const Home = () => {
   return (<div>
 
     <Header previewLink = "/" />
-    <div className='researchbar'>
-      <input type='text'
-      className='searchinput'
-      onChange={(e) => handlesearch(e.target.value)}
-      />
-      <button className='searchsubmit' type='button' onClick={handlesearch}>
-        Search
-      </button>
+    <div className='banner'>
+        <div className='resumeAll'>
+          <h2 className='bannerTitle'>All Phone Brands</h2>
+          <h2>{brandsData.length}</h2>
+        </div>
+        <div className='researchbar'>
+        <input type='text'
+        className='searchinput'
+        placeholder='search by brand name'
+        onChange={(e) => handlesearch(e.target.value)}
+        />
+        <button className='searchsubmit' type='button' onClick={handlesearch}>
+          Search
+        </button>
+      </div>
     </div>
+    <div></div>
     <ul className="brands-container">
         {
           brandsData.map((brandData) => (
