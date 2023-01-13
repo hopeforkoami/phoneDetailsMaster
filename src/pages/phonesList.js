@@ -23,7 +23,7 @@ const PhonesList = () => {
     <Header previewLink = "/" />
     <div className='banner'>
         <div className='resumeAll'>
-          <h2 className='bannerTitle'>{phonesListData[0].brandQuery} devices</h2>
+          <h2 className='bannerTitle'>{phonesListData[0] !== undefined ? phonesListData[0].brandQuery : ''} devices</h2>
           <h2>{phonesListData.length}</h2>
         </div>
         <div className='researchbar'>
